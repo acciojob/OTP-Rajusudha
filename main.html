@@ -7,20 +7,21 @@
 </head>
 
 <body>
-	  <div class="otp-card">
-        <h1>otp verification</h1>
-        <p>code has been send my gimal.com</p>
-        <div class="otp-card-inputrs">
-            <input type="text" maxlength="1" autofocus>
-            <input type="text" maxlength="1">
-            <input type="text" maxlength="1">
-            <input type="text" maxlength="1">
-            <input type="text" maxlength="1">
-            <input type="text" maxlength="1">
+	  <div>
+        <h2 id="verification_heading">OTP Verification</h2>
+        <p id="verification_subtext">Enter the 6-digit code sent to your phone</p>
+
+        <div class="code-container">
+            <input class="code" type="text" maxlength="1" oninput="focusNextInput(this)">
+            <input class="code" type="text" maxlength="1" oninput="focusNextInput(this)">
+            <input class="code" type="text" maxlength="1" oninput="focusNextInput(this)">
+            <input class="code" type="text" maxlength="1" oninput="focusNextInput(this)">
+            <input class="code" type="text" maxlength="1" oninput="focusNextInput(this)">
+            <input class="code" type="text" maxlength="1" oninput="focusNextInput(this)">
         </div>
-        <p>Didn't get the otp <a href="#">Resend</a></p>
-        <button disabled>Verify</button>
     </div>
+
+
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
